@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetExt>.rhp</TargetExt>
+    <Version>1.0.0</Version>
+    <AssemblyTitle>RhinoIgzImporter</AssemblyTitle>
+    <AssemblyName>RhinoIgzImporter</AssemblyName>
+    <Description>Import IngeTrazo .igz files into Rhino</Description>
+    <Product>RhinoIgzImporter</Product>
+    <Copyright>Special Design 2026</Copyright>
+    <Authors>Seghier Mohamed Abdelaziz</Authors>
+    <Company>Special Design</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="RhinoCommon" Version="8.28.26041.11001" IncludeAssets="compile; build" />
+    
+    <!-- Exclude runtime copies of basic libraries already present in Rhino -->
+    <PackageReference Include="System.Buffers" Version="4.5.1" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="System.Memory" Version="4.5.5" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\Rhino 8\System\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
