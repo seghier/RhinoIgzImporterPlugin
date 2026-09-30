@@ -87,4 +87,4 @@ The compiled `.rhp` assembly will be output to:
 
 ## 📄 License
 
-GPL-3.0 / Compatible Open Source license.
+This project is licensed under the [MIT License](LICENSE).
